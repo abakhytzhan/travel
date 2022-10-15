@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.banner {
+  width: 100%;
+  min-height: 500px;
+  background: url(img/main.jpg) center center/cover no-repeat;
+  
+}
+
+.header {
+  width: 600px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.banner h2 {
+  font-size: 75px;
+  text-align: right;
+  color: rgb(218, 69, 32);
+  font-family: 'Peralta', cursive;
+  line-height: 70px;
+}
+
+.button {
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 35px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #db3636;
+  color: white;
+  text-decoration: none;
+}
+.button:hover {
+  box-shadow: 0px 0px 20px #db3636;
+}
+.destinations {
+  padding: 30px 0 50px 0;
+
+  background-color: rgb(17, 17, 88);
+}
+.title {
+  font-size: 50px;
+  text-align: center;
+
+  color: rgb(213, 231, 242);
+}
+.subtitle {
+  font-size: 25px;
+  text-align: center;
+
+  color: rgb(213, 231, 242);
+}
+.destinations__wrapper {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.destinations__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 280px;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
+.destinations__item img {
+  width: 100%;
+}
+
+.destinations__subtitle {
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  /* color: darkblue; */
+  /* color: white; */
+  color: rgb(213, 231, 242);
+}
+.destinations__descr {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  /* color: rgb(17, 17, 88); */
+  /* color: white; */
+  color: rgb(213, 231, 242);
+}
+
+.footer {
+  padding-top: 30px;
+  height: 120px;
+  /* background-color: rgb(17, 17, 88); */
+  background-color: rgb(13, 13, 62);
+}
+.footer img {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+.footer__wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.footer__wrapper img {
+  margin-top: 10px;
+  width: 20px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    width: 500px;
+  }
+  .banner h2 {
+    font-size: 60px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .destinations__subtitle {
+    line-height: 35px;
+    font-size: 20px;
+  }
+  .destinations__descr {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    width: 300px;
+  }
+  .banner h2 {
+    font-size: 40px;
+  }
+}
